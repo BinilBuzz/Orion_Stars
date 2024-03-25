@@ -15,10 +15,8 @@
 
 get_header();
 ?>
-
 <section class="banner-wrapper d-flex align-items-center justify-content-center">
 	<img class="banner-bg" width="100%" src="https://orion.firekirinwebsite.com/wp-content/uploads/2024/03/hero-banner.png">
-
 	<div class="container banner-container">
 		<div class="row">
 			<div class="col-lg-8">
@@ -41,16 +39,12 @@ get_header();
 								<?php $first = false; ?>
 							<?php endwhile; ?>
 						</div>
-
 					</div>
 				<?php endif; ?>
-
 			</div>
 			<div class="col-lg-4">
 				<div class="banner-video">
-
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -65,7 +59,6 @@ get_header();
 				<h2 class="text-center">Featured Games curated for you</h2>
 			</div>
 			<div class="featured-wrapper relative pt-4">
-
 				<?php
 				$counter = 1; // Initialize counter variable
 				query_posts('post_type=game-list && order=asc');
@@ -80,18 +73,8 @@ get_header();
 				<?php endwhile;
 				wp_reset_query();
 				?>
-
-
-
-
-
-
-
-
 			</div>
 		</div>
-
-
 
 		<!-- Btn -->
 		<div class="mt-5 d-flex justify-content-center">
@@ -101,16 +84,8 @@ get_header();
 	</div>
 </section>
 
-
-
-
-
-
-
-
 <!-- REGISTER & PLAY -->
 <?php get_template_part('inc/contact-form'); ?>
-
 
 <?php
 get_footer();
