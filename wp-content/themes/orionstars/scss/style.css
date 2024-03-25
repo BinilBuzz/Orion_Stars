@@ -1,0 +1,540 @@
+body {
+  font-family: "Geologica", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Common */
+a {
+  color: #de073b;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+h5 {
+  font-family: "Audiowide", sans-serif;
+}
+
+.btn-red {
+  border: 2px solid #de073b;
+  color: #fff;
+  padding: 0.75rem 2.25rem;
+  background-color: #de073b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.btn-red:hover {
+  color: #de073b;
+  background: #fff;
+}
+
+.section-title h2 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.bg-color {
+  background: #0b0c14;
+}
+
+.bg-brown {
+  background-color: #272727;
+}
+
+.border-b {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 1.5rem;
+}
+
+/* Header */
+header {
+  padding: 1.5rem 0;
+  z-index: 9999;
+  position: relative;
+}
+header .logo-wrapper img {
+  min-width: 14.625rem;
+  height: 2.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 575.98px) {
+  header .logo-wrapper img {
+    min-width: 4.625rem;
+    height: auto;
+  }
+}
+header .position-fixed {
+  transition: background-color 0.3s ease;
+}
+header .position-fixed.sticky {
+  background-color: red;
+}
+header .nav-items {
+  padding-top: 10px;
+  z-index: 9999;
+}
+header .nav-items ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+header .nav-items ul li {
+  font-size: 0.875rem;
+  padding-right: 1.5rem;
+}
+header .nav-items ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header .nav-items ul li a:hover {
+  color: #de073b;
+}
+header .btn-wrapper a {
+  border: 2px solid #de073b;
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.75);
+  color: #de073b;
+  padding: 0.75rem 2.25rem;
+  font-weight: 600;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Banner Section */
+.banner-wrapper {
+  position: relative;
+  height: 100vh;
+  padding: 14rem 0;
+  color: #fff;
+}
+.banner-wrapper:before {
+  content: "";
+  background: #0b0c14;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.banner-wrapper .banner-container {
+  z-index: 9999;
+  color: #fff;
+}
+.banner-wrapper .banner-container h1 {
+  font-size: 4.5rem;
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .banner-wrapper .banner-container h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .banner-wrapper .banner-container h1 {
+    font-size: 2rem;
+  }
+}
+.banner-wrapper .banner-container p {
+  font-weight: 300;
+  width: 62%;
+  padding: 0.5rem 0 1rem;
+}
+
+/* Featured */
+.featured {
+  background-color: #0b0c14;
+  padding: 100px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.featured .circle-red {
+  width: 16rem;
+  height: 16rem;
+  background-color: #de073b;
+  border-radius: 50%;
+  filter: blur(256px);
+  position: absolute;
+  bottom: 27rem;
+  pointer-events: none;
+  overflow: hidden;
+}
+.featured .featured-wrapper {
+  display: grid;
+  gap: 10px;
+}
+.featured .featured-block {
+  text-align: center;
+}
+.featured .featured-block h3 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  bottom: 1rem;
+}
+.featured .item1 {
+  grid-column: 1/span 2;
+  grid-row: 1/span 3;
+}
+.featured .item1 img {
+  height: 458px;
+}
+.featured .item2 {
+  grid-column: 3;
+  grid-row: 2/span 2;
+}
+.featured .item2 img {
+  height: 224px;
+}
+.featured .item3 img {
+  height: 224px;
+}
+.featured .item4 img,
+.featured .item5 img,
+.featured .item6 img,
+.featured .item7 img {
+  height: 332px;
+}
+
+/* Register & Play */
+.register {
+  background-color: #0b0c14;
+  color: #fff;
+  padding: 100px 0px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+.register .circle-white {
+  background-color: #fff;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  filter: blur(256px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.register .testimonails:last-child {
+  border-left: 1px solid #23242B;
+  padding: 0px 1.5rem;
+}
+.register .name {
+  font-family: "Audiowide", sans-serif;
+  color: #de073b;
+  font-size: 1.125rem;
+}
+.register .register-form {
+  padding: 100px 0px 0px;
+}
+.register .register-form .img-wrapper img {
+  width: 34.3125rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-right: 15px;
+}
+.register .register-form .form-wrapper {
+  background-color: #272727;
+  padding: 2rem;
+}
+.register .register-form .form-wrapper h2 {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 3.875rem;
+}
+.register .register-form .form-wrapper .form-wrapper-btn {
+  background-color: #de073b;
+  color: #fff;
+  padding: 10px 0px;
+}
+.register .form-wrapper input,
+.register .form-wrapper select,
+.register .form-wrapper text,
+.register .form-wrapper textarea {
+  width: 100%;
+  padding: 0 0 0.5rem 0;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 30px;
+  background-color: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
+.register .form-wrapper input::-moz-placeholder, .register .form-wrapper select::-moz-placeholder, .register .form-wrapper text::-moz-placeholder, .register .form-wrapper textarea::-moz-placeholder {
+  color: #fff;
+}
+.register .form-wrapper input::placeholder,
+.register .form-wrapper select::placeholder,
+.register .form-wrapper text::placeholder,
+.register .form-wrapper textarea::placeholder {
+  color: #fff;
+}
+.register .form-wrapper input:focus,
+.register .form-wrapper select:focus,
+.register .form-wrapper text:focus,
+.register .form-wrapper textarea:focus {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 2px solid #de073b;
+}
+.register .form-wrapper-textarea {
+  width: 100%;
+  padding: 0 0 0.5rem 0;
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 40px;
+  overflow: hidden;
+}
+.register .form-wrapper-textarea:focus {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 2px solid #de073b;
+}
+.register .form-wrapper-textarea::-moz-placeholder {
+  color: #fff;
+}
+.register .form-wrapper-textarea::placeholder {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  background-color: #0b0c14;
+  color: #fff;
+  text-align: center;
+}
+footer .bg-img {
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+footer ul {
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+footer ul li {
+  list-style: none;
+  margin-right: 1.25rem;
+  padding-right: 1.25rem;
+  position: relative;
+}
+footer ul li:not(:last-child):after {
+  content: "";
+  background-color: #fff;
+  color: #fff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -2px;
+  height: 5px;
+  width: 4px;
+  top: 40%;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #de073b;
+}
+footer .foo-bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #23242B;
+}
+footer .foo-bottom-content p {
+  width: 65%;
+}
+footer .foo-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+footer .foo-logo img {
+  width: 230px;
+  height: 40px;
+  margin-top: 1.5rem;
+}
+footer .copyright {
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+@media (max-width: 576px) {
+  footer .copyright {
+    flex-direction: column;
+  }
+}
+
+.breadcrumb {
+  background: url("https://orion.firekirinwebsite.com/wp-content/uploads/2024/03/listing-top-banner.png") repeat-x;
+  background-color: #0b0c14;
+  color: #fff;
+  width: 100%;
+  padding: 10rem 0 5rem 0;
+  margin: 0;
+  background-size: contain;
+}
+.breadcrumb h1 {
+  font-family: "Audiowide", sans-serif;
+  align-items: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.breadcrumb .breadcrumb-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.breadcrumb .breadcrumb-content p {
+  width: 60%;
+  text-align: center;
+}
+
+.game-list-wrapper ul {
+  width: 100%;
+  padding: 1.5rem 12rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.game-list-wrapper ul:before {
+  content: "";
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 54%, rgba(255, 255, 255, 0) 100%);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.game-list-wrapper ul:after {
+  content: "";
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 54%, rgba(255, 255, 255, 0) 100%);
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.game-list-wrapper ul .game-nav-item {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+}
+.game-list-wrapper ul .game-nav-item .game-link {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+.game-list-wrapper ul .game-nav-item .game-link:active {
+  color: #de073b;
+}
+.game-list-wrapper ul .game-nav-item a {
+  color: #fff;
+  text-decoration: none;
+  color: #fff;
+}
+.game-list-wrapper ul .game-nav-item a:active {
+  color: #de073b;
+  background-color: none;
+}
+.game-list-wrapper .game-list {
+  padding: 3rem 0;
+}
+.game-list-wrapper .game-list .game-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 322px;
+}
+.game-list-wrapper .game-list .game-item h3 {
+  font-family: "Audiowide", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.single-title img {
+  width: 305px;
+  height: 204px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #fff;
+}
+
+.image-container {
+  padding: 100px 0;
+  overflow: hidden;
+  color: #fff;
+}
+.image-container h2 {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.image-container .register-text a {
+  text-decoration: none;
+}
+.image-container .large-images {
+  padding-bottom: 2rem;
+}
+.image-container .large-images img {
+  width: 100%;
+  height: 582px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.image-container .small-images .small-images-block {
+  width: 48%;
+}
+.image-container .small-images .small-images-block img {
+  width: 192px;
+  height: 104px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

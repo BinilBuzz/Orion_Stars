@@ -1,0 +1,145 @@
+body{
+    font-family: "Geologica", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	position: relative;
+    overflow-x: hidden;
+}
+/* Common */
+a:hover {
+    color: #b2062f;
+}
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.btn-red{
+	border: 2px solid #de073b;
+    color: #fff;
+    padding: 0.75rem 2.25rem;
+    background-color: #de073b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+.btn-red:hover {
+    color: #de073b;
+    transition-delay: 0.2s;
+    animation: ani500 0.6s forwards;
+    background:
+    radial-gradient(circle, #fff 0.2em, transparent 0.3em) 6em 6em/1em 1em,
+    radial-gradient(circle, #fff 0.2em, transparent 0.3em) 0 0/1em 1em;
+}
+.section-title h2 {
+	font-family: "Audiowide", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff;
+}
+/* Header */
+header {
+	padding: 1.5rem 0;
+	z-index: 9999;
+	position: relative;
+}
+header .logo-wrapper img {
+	min-width: 14.625rem;
+	height: 2.5rem;
+	object-fit: contain;
+}
+.nav-items ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+.btn-wrapper a {
+	border: 2px solid #de073b;
+	box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.75);
+	color: #de073b;
+	padding: 0.75rem 2.25rem;
+	font-weight: 600;
+	width: fit-content;
+	text-align: center;
+	text-decoration: none;
+}
+/* Banner Section */
+.banner-wrapper {
+	position: relative;
+	height: 100vh;
+	padding: 14rem 0;
+}
+.banner-wrapper .banner-bg {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+/* Featured */
+.featured {
+	background-color: #0b0c14;
+	padding: 100px 0px;
+	position: relative;
+}
+.featured .circle-red {
+    width: 16rem;
+    height: 16rem;
+    background-color: #de073b;
+    border-radius: 50%;
+    filter: blur(256px);
+    position: absolute;
+    right: -17rem;
+    bottom: 27rem;
+    pointer-events: none;
+}
+.featured-wrapper {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	gap: 1.5rem;
+}
+.featured-block {
+	display: grid;
+	position: relative;
+}
+.featured-block img {
+	width: 100%;
+}
+.featured-block h3 {
+	font-family: "Audiowide", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: uppercase;
+	color: #fff;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 0px;
+}
+
+.featured-block .block-image-1 {
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
+}
+/* Register & Play */
+.register {
+	background-color: #0b0c14;
+	padding: 100px 0px;
+	position: relative;
+	overflow: hidden;
+}
+.register .circle-white {
+    background-color: #fff;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    filter: blur(256px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
