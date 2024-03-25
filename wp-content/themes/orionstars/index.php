@@ -42,7 +42,7 @@ get_header();
 					</div>
 				<?php endif; ?>
 			</div>
-			<div class="col-lg-4">
+			<div class="col-lg-4 d-none d-lg-block">
 				<div class="banner-video">
 				<iframe  src="https://www.youtube.com/embed/3vbZ4xR2DHE" title="Orion stars|High bet and winning gameplay" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 				</div>
