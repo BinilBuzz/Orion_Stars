@@ -40,5 +40,7 @@
 <?php wp_footer(); ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo bloginfo('template_url'); ?>/js/sticky-header.js"></script>
+<script></script>
 </body>
 </html>

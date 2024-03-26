@@ -15,8 +15,26 @@ a:hover {
   text-decoration: underline;
 }
 
+h2 {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
 h5 {
   font-family: "Audiowide", sans-serif;
+}
+@media (max-width: 767.98px) {
+  h5 {
+    font-size: 1.25rem;
+  }
 }
 
 .btn-red {
@@ -41,6 +59,11 @@ h5 {
   text-transform: uppercase;
   color: #fff;
 }
+@media (max-width: 767.98px) {
+  .section-title h2 {
+    font-size: 1.25rem;
+  }
+}
 
 .bg-color {
   background: #0b0c14;
@@ -54,30 +77,41 @@ h5 {
   border-bottom: 1px solid #fff;
   padding-bottom: 1.5rem;
 }
+@media (max-width: 767.98px) {
+  .border-b {
+    padding-bottom: 0.75rem;
+  }
+}
 
 /* Header */
 header {
   padding: 1.5rem 0;
-  z-index: 9999;
+  z-index: 999999;
   position: relative;
+  overflow-x: hidden;
+}
+@media (max-width: 767.98px) {
+  header {
+    padding: 0.5rem 0;
+  }
 }
 header .logo-wrapper img {
-  min-width: 14.625rem;
+  width: 14.625rem;
   height: 2.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   header .logo-wrapper img {
-    min-width: 4.625rem;
+    width: 10.5rem;
     height: auto;
   }
 }
-header .position-fixed {
-  transition: background-color 0.3s ease;
-}
-header .position-fixed.sticky {
-  background-color: red;
+@media (max-width: 575.98px) {
+  header .logo-wrapper img {
+    width: 8.5rem;
+    height: auto;
+  }
 }
 header .nav-items {
   padding-top: 10px;
@@ -111,6 +145,12 @@ header .btn-wrapper a {
   text-align: center;
   text-decoration: none;
 }
+@media (max-width: 575.98px) {
+  header .btn-wrapper a {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}
 
 /* Banner Section */
 .banner-wrapper {
@@ -118,6 +158,11 @@ header .btn-wrapper a {
   height: 100vh;
   padding: 14rem 0;
   color: #fff;
+}
+@media (max-width: 767.98px) {
+  .banner-wrapper {
+    height: auto;
+  }
 }
 .banner-wrapper:before {
   content: "";
@@ -162,11 +207,14 @@ header .btn-wrapper a {
   width: 62%;
   padding: 0.5rem 0 1rem;
 }
+.banner-wrapper .banner-video {
+  z-index: 99;
+}
 .banner-wrapper .banner-video iframe {
   position: absolute;
   top: 6.25rem;
   right: 0rem;
-  z-index: 9;
+  z-index: 0;
   width: 675px;
   height: 640px;
 }
@@ -177,6 +225,11 @@ header .btn-wrapper a {
   padding: 100px 0px;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .featured {
+    padding: 50px 0px;
+  }
 }
 .featured .circle-red {
   width: 16rem;
@@ -211,12 +264,25 @@ header .btn-wrapper a {
   text-align: center;
   bottom: 1rem;
 }
+.featured .featured-block h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+.featured .featured-block h3 a:hover {
+  color: #de073b;
+}
 .featured .item1 {
   grid-column: 1/span 2;
   grid-row: 1/span 3;
 }
 .featured .item1 img {
+  width: 100%;
   height: 458px;
+}
+@media (max-width: 767.98px) {
+  .featured .item1 img {
+    height: auto;
+  }
 }
 .featured .item2 {
   grid-column: 3;
@@ -225,14 +291,32 @@ header .btn-wrapper a {
 .featured .item2 img {
   height: 224px;
 }
+@media (max-width: 767.98px) {
+  .featured .item2 img {
+    height: auto;
+  }
+}
 .featured .item3 img {
   height: 224px;
+}
+@media (max-width: 767.98px) {
+  .featured .item3 img {
+    height: auto;
+  }
 }
 .featured .item4 img,
 .featured .item5 img,
 .featured .item6 img,
 .featured .item7 img {
   height: 332px;
+}
+@media (max-width: 767.98px) {
+  .featured .item4 img,
+  .featured .item5 img,
+  .featured .item6 img,
+  .featured .item7 img {
+    height: auto;
+  }
 }
 
 /* Register & Play */
@@ -243,6 +327,11 @@ header .btn-wrapper a {
   position: relative;
   overflow: hidden;
   display: flex;
+}
+@media (max-width: 768px) {
+  .register {
+    padding: 50px 0px;
+  }
 }
 .register .circle-white {
   background-color: #fff;
@@ -255,8 +344,13 @@ header .btn-wrapper a {
   left: 0;
 }
 .register .testimonails:last-child {
-  border-left: 1px solid #23242B;
+  border-left: 1px solid #23242b;
   padding: 0px 1.5rem;
+}
+@media (max-width: 767.98px) {
+  .register .testimonails:last-child {
+    padding: 0px 0.75rem;
+  }
 }
 .register .name {
   font-family: "Audiowide", sans-serif;
@@ -266,6 +360,11 @@ header .btn-wrapper a {
 .register .register-form {
   padding: 100px 0px 0px;
 }
+@media (max-width: 768px) {
+  .register .register-form {
+    padding: 0px;
+  }
+}
 .register .register-form .img-wrapper img {
   width: 34.3125rem;
   height: auto;
@@ -273,17 +372,25 @@ header .btn-wrapper a {
      object-fit: contain;
   padding-right: 15px;
 }
+@media (max-width: 768px) {
+  .register .register-form .img-wrapper img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
 .register .register-form .form-wrapper {
   background-color: #272727;
   padding: 2rem;
 }
 .register .register-form .form-wrapper h2 {
-  font-family: "Audiowide", sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 400;
   margin-bottom: 3.875rem;
+}
+@media (max-width: 767.98px) {
+  .register .register-form .form-wrapper h2 {
+    margin-bottom: 1rem;
+  }
 }
 .register .register-form .form-wrapper .form-wrapper-btn {
   background-color: #de073b;
@@ -363,6 +470,7 @@ footer .bg-img {
 footer ul {
   font-family: "Audiowide", sans-serif;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-transform: uppercase;
 }
@@ -371,6 +479,12 @@ footer ul li {
   margin-right: 1.25rem;
   padding-right: 1.25rem;
   position: relative;
+}
+@media (max-width: 767.98px) {
+  footer ul li {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 footer ul li:not(:last-child):after {
   content: "";
@@ -398,10 +512,15 @@ footer .foo-bottom-content {
   justify-content: center;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #23242B;
+  border-bottom: 1px solid #23242b;
 }
 footer .foo-bottom-content p {
   width: 65%;
+}
+@media (max-width: 575.98px) {
+  footer .foo-bottom-content p {
+    width: 100%;
+  }
 }
 footer .foo-logo {
   display: flex;
@@ -427,13 +546,27 @@ footer .copyright {
 }
 
 .breadcrumb {
-  background: url("https://orion.firekirinwebsite.com/wp-content/uploads/2024/03/listing-top-banner.png") repeat-x;
+  background: url("https://orion.firekirinwebsite.com/wp-content/uploads/2024/03/listing-top-banner.png") repeat;
   background-color: #0b0c14;
   color: #fff;
   width: 100%;
   padding: 10rem 0 5rem 0;
   margin: 0;
   background-size: contain;
+}
+@media (max-width: 768px) {
+  .breadcrumb {
+    padding: 8rem 0 2.5rem 0;
+  }
+}
+.breadcrumb .breadcrumb-block {
+  display: flex;
+  gap: 2.5rem;
+}
+@media (max-width: 768px) {
+  .breadcrumb .breadcrumb-block {
+    flex-direction: column;
+  }
 }
 .breadcrumb h1 {
   font-family: "Audiowide", sans-serif;
@@ -443,6 +576,16 @@ footer .copyright {
   font-size: 4.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
+}
+@media (max-width: 767.98px) {
+  .breadcrumb h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .breadcrumb h1 {
+    font-size: 1.5rem;
+  }
 }
 .breadcrumb .breadcrumb-content {
   display: flex;
@@ -527,6 +670,11 @@ footer .copyright {
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid #fff;
+}
+@media (max-width: 768px) {
+  .single-title img {
+    width: 100%;
+  }
 }
 
 .image-container {

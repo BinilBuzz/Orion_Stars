@@ -10,11 +10,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /makura/
+RewriteBase /Orion_Stars/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /makura/index.php [L]
+RewriteRule . /Orion_Stars/index.php [L]
 </IfModule>
 
 # END WordPress

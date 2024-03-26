@@ -79,7 +79,7 @@ get_header();
 
 		<!-- Btn -->
 		<div class="mt-5 d-flex justify-content-center">
-			<a class="btn-red" href="#">View All Games</a>
+			<a class="btn-red" href="<?php bloginfo('template_url'); ?>/our-games/">View All Games</a>
 		</div>
 	</div>
 	</div>

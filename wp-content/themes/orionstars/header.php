@@ -33,10 +33,9 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-
 	<header class="fixed-top ">
 		<div class="container">
-			<div class="d-flex justify-content-between align-self-start  border-b">
+			<div class="d-flex justify-content-between align-self-start align-center align-items-center  border-b">
 				<div class="nav-items">
 					<nav class="navbar navbar-expand-lg bg-transparent">
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
