@@ -73,14 +73,26 @@ h5 {
 }
 
 /* Header */
-header {
-  padding: 1.5rem 0;
+header.header.fixed-top.active {
+  background-color: $primary_color;
+  transition: 0.3s ease-in-out;
+    background-color: #fff;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    border-bottom: 4px solid #de073b;
+    z-index: 999999;
+  
+  a{
+    color: $secondary_color;
+  }
+}
+.header {
+  padding-top: 1.5rem;
   z-index: 999999;
-  position: relative;
   overflow-x: hidden;
   @media (max-width: 767.98px) {
     padding: 0.5rem 0;
   }
+
   .logo-wrapper {
     img {
       width: 14.625rem;
@@ -325,8 +337,8 @@ header {
   .register-form {
     padding: 100px 0px 0px;
     @media (max-width: 768px) {
-        padding: 0px;
-      }
+      padding: 0px;
+    }
     .img-wrapper img {
       width: 34.3125rem;
       height: auto;

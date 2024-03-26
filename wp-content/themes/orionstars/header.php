@@ -33,7 +33,7 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<header class="fixed-top ">
+	<header class="header fixed-top ">
 		<div class="container">
 			<div class="d-flex justify-content-between align-self-start align-center align-items-center  border-b">
 				<div class="nav-items">

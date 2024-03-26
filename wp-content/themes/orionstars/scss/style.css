@@ -84,57 +84,68 @@ h5 {
 }
 
 /* Header */
-header {
-  padding: 1.5rem 0;
+header.header.fixed-top.active {
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: 4px solid #de073b;
   z-index: 999999;
-  position: relative;
+}
+header.header.fixed-top.active a {
+  color: #de073b;
+}
+
+.header {
+  padding-top: 1.5rem;
+  z-index: 999999;
   overflow-x: hidden;
 }
 @media (max-width: 767.98px) {
-  header {
+  .header {
     padding: 0.5rem 0;
   }
 }
-header .logo-wrapper img {
+.header .logo-wrapper img {
   width: 14.625rem;
   height: 2.5rem;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media (max-width: 767.98px) {
-  header .logo-wrapper img {
+  .header .logo-wrapper img {
     width: 10.5rem;
     height: auto;
   }
 }
 @media (max-width: 575.98px) {
-  header .logo-wrapper img {
+  .header .logo-wrapper img {
     width: 8.5rem;
     height: auto;
   }
 }
-header .nav-items {
+.header .nav-items {
   padding-top: 10px;
   z-index: 9999;
 }
-header .nav-items ul {
+.header .nav-items ul {
   display: flex;
   list-style: none;
   align-items: center;
   justify-content: center;
 }
-header .nav-items ul li {
+.header .nav-items ul li {
   font-size: 0.875rem;
   padding-right: 1.5rem;
 }
-header .nav-items ul li a {
+.header .nav-items ul li a {
   color: #fff;
   text-decoration: none;
 }
-header .nav-items ul li a:hover {
+.header .nav-items ul li a:hover {
   color: #de073b;
 }
-header .btn-wrapper a {
+.header .btn-wrapper a {
   border: 2px solid #de073b;
   box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.75);
   color: #de073b;
@@ -146,7 +157,7 @@ header .btn-wrapper a {
   text-decoration: none;
 }
 @media (max-width: 575.98px) {
-  header .btn-wrapper a {
+  .header .btn-wrapper a {
     padding: 0.5rem 0.5rem;
     font-size: 0.875rem;
   }
