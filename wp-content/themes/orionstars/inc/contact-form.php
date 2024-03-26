@@ -1,6 +1,9 @@
 <section class="register">
 	<div class="container">
 		<div class="circle-white"></div>
+		
+		<?php if ( is_front_page() ) :
+				?>
 		<div class="row">
 			<div class="section-title mb-5">
 				<h2 class="text-center">Register & Play for Free</h2>
@@ -43,7 +46,7 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</div>
-
+		<?php endif; ?>
 
 		<!-- Form -->
 		<div class="row register-form">

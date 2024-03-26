@@ -71,9 +71,11 @@ h5 {
     padding-bottom: 0.75rem;
   }
 }
-
+.no-padding{
+    padding: 0px;
+}
 /* Header */
-header.header.fixed-top.active {
+header.header.fixed-top.is-sticky {
   background-color: $primary_color;
   transition: 0.3s ease-in-out;
     background-color: #fff;

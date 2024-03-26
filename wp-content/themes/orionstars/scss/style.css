@@ -83,8 +83,12 @@ h5 {
   }
 }
 
+.no-padding {
+  padding: 0px;
+}
+
 /* Header */
-header.header.fixed-top.active {
+header.header.fixed-top.is-sticky {
   background-color: #fff;
   transition: 0.3s ease-in-out;
   background-color: #fff;
@@ -92,7 +96,7 @@ header.header.fixed-top.active {
   border-bottom: 4px solid #de073b;
   z-index: 999999;
 }
-header.header.fixed-top.active a {
+header.header.fixed-top.is-sticky a {
   color: #de073b;
 }
 
